@@ -2,13 +2,14 @@ import Image from "next/image";
 // import NavBar from "@/app/_components/NavBar";
 import { VscArrowSmallRight } from "react-icons/vsc";
 import StickyCard from "./_components/StickyCard";
+import GetQuoteComp from "./_components/GetQuoteComp";
 
 export default function Home() {
   return (
-    <div className="min-h-screen pt-[235px] mb-0">
+    <div className="min-h-screen pt-[155px] mb-0">
       {/* <NavBar /> */}
       {/* <div className="w-full px-[40px] flex items-end flex-row flex-nowrap gap-4 h-[192px] mt-[204px] justify-center overflow-visible"> */}
-      <div className="brand-header-container flex items-end justify-center flex-row flex-nowrap gap-4 h-48 w-full overflow-visible px-10 relative flex-none">
+      <div className="mt-[80px] max-[1199px]:mt-0 brand-header-container flex items-end justify-center flex-row flex-nowrap gap-4 h-48 w-full overflow-visible px-10 max-[809px]:px-6 relative flex-none">
         <svg
           viewBox="0 0 532 192"
           className="brand-header h-auto flex-none relative whitespace-pre outline-none w-[50%] shrink-0 justify-start flex flex-col opacity-[1]"
@@ -30,7 +31,7 @@ export default function Home() {
         </svg>
         <div className="brand-overview-container items-center flex flex-row flex-nowrap [flex:1_0_0px] gap-2.5 h-[192px] w-[1px] relative justify-center overflow-hidden">
           <div className="brand-overview outline-none relative flex w-[86%] h-[56%] flex-col justify-end shrink-0 whitespace-pre-wrap">
-            <p className="font-mono font-medium text-right leading-[1.2em]">
+            <p className="font-mono font-medium text-right leading-[1.2em] w-full">
               Leading umbrella corporation empowering innovation across textile manufacturing,
               dairy products, and mining equipment sectors with strategic leadership and operational
               excellence.
@@ -39,10 +40,20 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="hidden my-6 mt-7 max-[809px]:flex w-full h-[44px] relative flex-none px-6">
+        <button className="bg-[#1a1f71] size-full w-full items-center cursor-pointer flex flex-row flex-nowrap gap-2.5 h-[44px] justify-center overflow-hidden p-4 relative">
+          <div className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre w-auto cursor-pointer ">
+            <p className="font-mono font-extrabold text-white text-[16px] tracking-normal leading-[1.2em] whitespace-pre relative cursor-pointer ">
+              ✦ Get Quote
+            </p>
+          </div>
+        </button>
+      </div>
+
       <div className="w-full flex justify-center mt-2.5">
 
-        <div className="items-center flex flex-none flex-row flex-nowrap gap-1 h-[442px] justify-center overflow-hidden relative w-[93%]">
-          <div className="flex-none h-full overflow-hidden relative w-[33%]">
+        <div className="max-[809px]:flex-col max-[809px]:h-[635px] items-center flex flex-none flex-row flex-nowrap gap-1 h-[442px] justify-center overflow-hidden relative w-[93%]">
+          <div className="flex-none h-full overflow-hidden relative w-[33%] max-[809px]:[flex:1_0_0px] max-[809px]:h-[1px] max-[809px]:w-full">
             <Image
               fill
               className="object-cover"
@@ -50,7 +61,7 @@ export default function Home() {
               alt="clothes image"
             />
           </div>
-          <div className="flex-none h-full overflow-hidden relative w-[33%]">
+          <div className="flex-none h-full overflow-hidden relative w-[33%] max-[809px]:[flex:1_0_0px] max-[809px]:h-[1px] max-[809px]:w-full">
             <Image
               fill
               className="object-cover"
@@ -59,7 +70,7 @@ export default function Home() {
 
             />
           </div>
-          <div className="flex-none h-full overflow-hidden relative w-[33%]">
+          <div className="flex-none h-full overflow-hidden relative w-[33%] max-[809px]:[flex:1_0_0px] max-[809px]:h-[1px] max-[809px]:w-full">
             <Image
               fill
               className="object-cover"
@@ -72,12 +83,12 @@ export default function Home() {
 
       </div>
 
-      <div className="mt-20 mb-15 flex flex-col flex-none flex-nowrap items-center justify-center gap-[10px] overflow-hidden px-[40px] w-full h-min">
+      <div className="mt-20 mb-15 flex flex-col flex-none flex-nowrap items-center justify-center gap-[10px] overflow-hidden px-10 max-[809px]:px-6 w-full h-min">
         <div className="outline-none flex justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full">
           <p className="font-mono font-medium text-[16px] leading-[1.2em] w-full">Est 2018</p>
         </div>
         <div className="outline-none flex flex-col shrink-0 justify-start h-auto relative whitespace-pre-wrap w-full">
-          <p className="font-anton text-[56px] font-normal leading-[1.2em] ">
+          <p className="font-anton text-[56px] max-[1199px]:text-[40px] max-[809px]:text-[32px] font-normal leading-[1.2em] ">
             We foster synergy and sustainable growth by uniting diverse
             industries under one agile, future-focused ecosystem.
           </p>
@@ -91,7 +102,7 @@ export default function Home() {
       </div>
 
 
-      <div className="items-center flex flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-10 w-full">
+      <div className="items-center flex flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-10 max-[809px]:p-6 w-full">
         <StickyCard
           title="Textile Manufacturing"
           precis="Advanced yarn and fabric production with cutting-edge technology"
@@ -131,30 +142,10 @@ export default function Home() {
 
       </div>
 
-      <div className="w-full h-min px-[40px] mb-10 ">
-        <div className="p-[40px] bg-[#1a1f71] text-white w-full">
-          <div className="py-[38px] space-y-[40px] w-full">
-            <div className="space-y-[10px] w-full">
+      <GetQuoteComp/>
 
-              <p className="font-anton text-[56px] font-normal leading-[1.2em]">
-                Ready to partner with us ?
-              </p>
-              <p className="font-mono text-[16px] leading-[1.2em]">
-                Join us in building the future across textile, dairy, and mining equipment industries.
-              </p>
-            </div>
 
-            <div className="w-full h-20 flex justify-end">
-              <button className="font-mono text-[27px] font-extrabold leading-[1.2em] text-[#1a1f71] bg-[#e2e3f8] h-full p-[27.15px] items-center cursor-pointer flex flex-row flex-nowrap justify-center overflow-hidden relative ">
-                ✦ Get Quote
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-        {/* <div className=" overflow-hidden w-full">
+      {/* <div className=" overflow-hidden w-full">
           <p className="text-[115px] font-anton w-full font-normal p-2.5 leading-[1.2em]">
         • AAATech Corporation • Est 2000
         </p>

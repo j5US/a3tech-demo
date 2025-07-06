@@ -1,12 +1,11 @@
-import InfinityBanner from "./InfinityBanner";
 import { Marquee } from "./Marquee";
 
 function Footer() {
     return (
         <footer className="pt-[60px]">
 
-            <div className="mb-7 flex flex-row flex-none flex-nowrap overflow-hidden justify-between items-center w-full px-[40px]">
-                <div className="outline-none w-[367px] flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap">
+            <div className="mb-7 flex flex-row max-[809px]:flex-col max-[809px]:px-6 flex-none flex-nowrap overflow-hidden justify-between max-[809px]:items-start max-[809px]:justify-center max-[809px]:gap-6 items-center w-full px-10">
+                <div className="outline-none w-[367px] max-[809px]:w-full flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap">
 
                     <p className="leading-[1.2em] font-mono font-medium text-[16px] whitespace-pre-wrap ">
                         Leading umbrella corporation empowering innovation across textile manufacturing, dairy

@@ -22,13 +22,13 @@
       @apply flex-col items-start gap-0 h-min order-0;
     }
     .brand-header{
-      @apply w-full
+      @apply w-full;
     }
     .brand-overview-container{
-      @apply flex-none h-min w-full
+      @apply flex-none h-min w-full mb-2;
     }
     .brand-overview{
-      @apply h-auto w-[1px] [flex:1_0_0px]
+      @apply h-auto w-[1px] [flex:1_0_0px];
     }
   }
 }
