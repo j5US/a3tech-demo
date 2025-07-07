@@ -9,8 +9,17 @@ function StoryBanner() {
             <motion.svg
                 viewBox="0 0 1120 179"
                 className="h-auto flex-none relative whitespace-pre outline-none w-full shrink-0 justify-start flex flex-col opacity-[1]"
-                initial={{ x: -150, opacity: 0 }}     // Start off-screen left
-                animate={{ x: 0, opacity: 1 }}        // Animate to natural position
+                initial={{ x: -150, opacity: 0, skewX: "0deg", skewY: "0deg"  }}     
+                animate={{ x: 0, opacity: 1 }}        
+                whileHover={{
+                    skewX: "6deg",
+                    skewY: "1deg",
+                    transition: {
+                        type: "spring",
+                        bounce: 0.6,
+                        duration: 2
+                    }
+                }}
                 transition={{
                     duration: 2,
                     ease: "easeOut",
