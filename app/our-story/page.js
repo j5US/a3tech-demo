@@ -2,6 +2,8 @@ import Image from "next/image";
 import ValueCard from "../_components/ValueCard";
 import TeamLeadCard from "../_components/TeamLeadCard";
 import GetQuoteComp from "../_components/GetQuoteComp";
+import StoryBanner from "../_components/StoryBanner";
+import AnimateFlyInBottom from "../_components/AnimateFlyInBottom";
 
 export const metadata = {
     title: "AAA Tech Corp • Our Story",
@@ -10,46 +12,9 @@ export const metadata = {
 export default function Page() {
     return (
         <div className="min-h-screen pt-[200px] mb-0">
-            <div className="flex px-10 max-[1199px]:px-6 pb-10 items-end flex-none flex-col flex-nowrap gap-2.5 h-min justify-center overflow-hidden relative w-full">
-                <svg
-                    viewBox="0 0 1120 179"
-                    className="h-auto flex-none relative whitespace-pre outline-none w-full shrink-0 justify-start flex flex-col opacity-[1]"
-                >
-                    <foreignObject width="100%" height="100%"
-                        style={{
-                            overflow: 'visible',
-                            transformOrigin: 'center center',
-                            whiteSpace: 'pre',
-                        }}
-                    >
-                        <p
-                            className="text-[149px] font-anton whitespace-pre leading-[1.2em] "
-                            xmlns="http://www.w3.org/1999/xhtml"
-                        >
-                            Building the Future
-                        </p>
-                    </foreignObject>
-                </svg>
-                <div className=" items-end flex flex-none flex-col flex-nowrap gap-6 h-min overflow-hidden relative w-full">
-                    <div className="outline-none flex flex-col justify-end shrink-0 flex-none h-auto relative whitespace-pre-wrap w-[86%] max-[1199px]:w-full">
-                        <p className="font-mono font-medium text-right text-[16px] leading-[1.2em]">
-                            Established in 2024, AAA Tech Corporation Pvt. Ltd. serves as an umbrella corporation, acting as the parent company to a group of affiliated and subsidiary businesses across diverse sectors.
-                        </p>
-                    </div>
-                    <div className="contents ">
-                        <div className="flex-none h-[480px] max-[1199px]:h-[237px] relative w-full">
-                            <Image
-                                className="object-cover"
-                                src="/studio.avif"
-                                fill
-                                alt="AAA Tech Corporation group picture"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <StoryBanner />
 
-            <div className="items-center flex flex-none flex-col flex-nowrap gap-2.5 h-min justify-center overflow-hidden p-10 max-[1199px]:px-6 relative w-full">
+            <AnimateFlyInBottom classNames="items-center flex flex-none flex-col flex-nowrap gap-2.5 h-min justify-center overflow-hidden p-10 max-[1199px]:px-6 relative w-full">
                 <div className="text-[16px] font-mono font-medium items-center flex flex-none flex-row flex-nowrap h-min justify-between overflow-hidden relative w-full">
                     <p className="leading-[1.2em]">Our Story</p>
                     <p className="leading-[1.2em]">Est 2024</p>
@@ -71,10 +36,10 @@ export default function Page() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </AnimateFlyInBottom>
             <div className="items-center flex flex-none flex-col gap-0 h-min overflow-hidden p-10 relative w-full max-[1199px]:px-6 max-[1199px]:gap-10">
 
-                <div className="items-center flex flex-row gap-0 h-min max-w-full overflow-hidden relative w-full max-[1199px]:flex-col max-[1199px]:gap-6">
+                <AnimateFlyInBottom viewportAmount={0.4} classNames="items-center flex flex-row gap-0 h-min max-w-full overflow-hidden relative w-full max-[1199px]:flex-col max-[1199px]:gap-6">
                     <div className="items-center flex [flex:1_0_0px] flex-col gap-[15px] h-min overflow-visible relative w-[1px] max-[1199px]:flex-none max-[1199px]:order-1 max-[1199px]:w-full">
                         <div className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto max-w-full relative whitespace-pre-wrap w-[80%] max-[1199px]:w-full">
                             <p className="font-anton text-[32px] text-left tracking-[-0.03em] leading-[1em] ">
@@ -93,9 +58,9 @@ export default function Page() {
                             <path d="M 0 2.25 C 0 1.007 1.007 0 2.25 0 C 3.493 0 4.5 1.007 4.5 2.25 C 4.5 3.493 3.493 4.5 2.25 4.5 C 1.007 4.5 0 3.493 0 2.25 Z" fill="transparent" height="4.5px" id="dwzTVdd43" strokeDasharray="" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" stroke="rgb(255, 255, 255)" transform="translate(9.75 9.75)" width="4.5px"></path>
                         </svg>
                     </div>
-                </div>
+                </AnimateFlyInBottom>
 
-                <div className="items-center flex flex-none flex-row flex-nowrap gap-2.5 h-min justify-center max-w-full overflow-hidden relative w-full max-[1199px]:flex-col max-[1199px]:gap-6">
+                <AnimateFlyInBottom viewportAmount={0.4} classNames="items-center flex flex-none flex-row flex-nowrap gap-2.5 h-min justify-center max-w-full overflow-hidden relative w-full max-[1199px]:flex-col max-[1199px]:gap-6">
                     <div className="items-center aspect-[1/1] bg-[#1a1f71] flex [flex:1_0_0px] flex-row flex-nowrap gap-2.5 h-auto justify-center overflow-visible relative w-[1px] max-[1199px]:flex-none max-[1199px]:w-full">
                         <svg className="flex-none h-auto relative w-1/2 aspect-[1]" display="block" role="presentation" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M 0 7.25 C 0 3.246 3.246 0 7.25 0 C 11.254 0 14.5 3.246 14.5 7.25 C 14.5 11.254 11.254 14.5 7.25 14.5 C 3.246 14.5 0 11.254 0 7.25 Z" fill="transparent" height="14.5px" id="eykqsanp5" strokeDasharray="" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" stroke="rgb(255,255,255)" transform="translate(4.75 4.75)" width="14.5px"></path>
@@ -130,11 +95,11 @@ export default function Page() {
                         </div>
                     </div>
 
-                </div>
+                </AnimateFlyInBottom>
 
             </div>
 
-            <div className="items-start bg-[#1a1f71] flex flex-col flex-nowrap gap-6 h-min justify-center overflow-hidden px-[40px] pt-[40px] pb-[100px] relative w-full">
+            <AnimateFlyInBottom classNames="items-start bg-[#1a1f71] flex flex-col flex-nowrap gap-6 h-min justify-center overflow-hidden px-[40px] pt-[40px] pb-[100px] relative w-full">
                 <svg className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre w-full" viewBox="0 0 351 67">
                     <foreignObject className="overflow-visible w-full h-full whitespace-pre " >
                         <p className="font-anton text-[56px] text-white whitespace-pre font-normal leading-[1.2em]">
@@ -181,9 +146,9 @@ export default function Page() {
                         value="We prioritize customer satisfaction by supporting companies in delivering superior products & services."
                     />
                 </div>
-            </div>
+            </AnimateFlyInBottom>
 
-            <div className="items-start flex flex-none flex-col flex-nowrap gap-6 h-min justify-center overflow-hidden p-10 max-[1199px]:px-6 relative w-full">
+            <AnimateFlyInBottom classNames="items-start flex flex-none flex-col flex-nowrap gap-6 h-min justify-center overflow-hidden p-10 max-[1199px]:px-6 relative w-full">
 
                 <div className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre w-auto max-[1199px]:w-full max-[1199px]:whitespace-pre-wrap">
                     <p className="max-[1199px]:text-[40px] font-anton text-[56px] font-normal tracking-normal leading-[1.2em] text-start max-[1199px]:text-center whitespace-pre h-auto w-auto flex-none relative" >
@@ -226,7 +191,7 @@ export default function Page() {
                         Team Members : 10-20
                     </p>
                 </div>
-            </div>
+            </AnimateFlyInBottom>
 
             {/* <div className="w-full h-min px-[40px] mb-10 ">
                 <div className="p-[40px] bg-[#1a1f71] text-white w-full">

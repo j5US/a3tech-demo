@@ -1,7 +1,27 @@
+"use client";
+import { motion } from "framer-motion";
+
 function GetQuoteComp() {
     return (
         <div className="w-full h-min px-10 max-[1199px]:px-6 mb-10 ">
-            <div className="p-10 max-[809px]:px-6 bg-[#1a1f71] text-white w-full">
+            <motion.div
+                className="p-10 max-[809px]:px-6 bg-[#1a1f71] text-white w-full"
+                initial={{
+                    opacity: 0
+                }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.8,
+                        ease: "easeInOut"
+                    }
+                }}
+                viewport={{
+                    amount: "full",
+                    once: true,
+                }}
+            >
+
                 <div className="py-[38px] max-[809px]:py-16 space-y-[40px] w-full">
                     <div className="space-y-[10px] w-full">
 
@@ -19,7 +39,7 @@ function GetQuoteComp() {
                         </button>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
