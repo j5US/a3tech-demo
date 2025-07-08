@@ -1,28 +1,32 @@
 import { PiYarn } from "react-icons/pi";
-import { IoSunnyOutline } from "react-icons/io5";
 import Link from "next/link";
 import NavDrawer from "./NavDrawer";
+import DarkModeToggle from "./DarkModeToggle";
+import AnimateTilt from "./AnimateTilt";
 
 function NavBar() {
     return (
-        <div className="h-20 fixed z-50 bg-white top-0 w-full">
+        <div className="h-20 fixed z-50 bg-setting-nav top-0 w-full">
             <nav className="flex justify-between border-b border-[#00000012] size-full font-mono items-center px-10 max-[809px]:px-6">
                 <Link href="/" className="flex gap-5 items-center h-full">
                     <PiYarn className="text-2xl" />
                     <p className="text-[16px] font-extrabold max-[809px]:hidden">AAA Tech Corporation</p>
                 </Link>
 
-                <div className="flex gap-5 items-center text-[15.5px] font-medium">
-                    <p className="max-[1200px]:hidden">Business Division</p>
+                <div className="flex gap-5 items-center text-accent-nav text-[15.5px] font-medium">
+                    <Link href="#" className="max-[1200px]:hidden">Business Division</Link>
                     <Link className="max-[1200px]:hidden" href="/our-story">Our Story</Link>
-                    <p className="max-[1200px]:hidden" >Contact</p>
-                    <div className="max-[809px]:hidden h-11 border px-4 py-2 flex items-center gap-1 bg-[#1A1f71] font-extrabold text-white">
+                    <Link href="#" className="max-[1200px]:hidden" >Contact</Link>
+                    <AnimateTilt
+                        classNames="cursor-pointer max-[809px]:hidden h-11 px-4 py-2 flex items-center gap-1 bg-setting-dim font-extrabold text-accent-bright"
+                        hoverSetting="var(--accent-nav)"
+                        bgSetting="var(--setting-dim)"
+                    >
                         <p> ✦ Get Quote</p>
-                    </div>
-                    <button className="text-2xl">
-                        <IoSunnyOutline />
-                    </button>
-                    <NavDrawer/>
+                    </AnimateTilt>
+
+                    <DarkModeToggle />
+                    <NavDrawer />
                 </div>
             </nav>
         </div>

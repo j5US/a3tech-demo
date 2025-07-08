@@ -1,11 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import AnimateTilt from "./AnimateTilt";
 
 function GetQuoteComp() {
     return (
         <div className="w-full h-min px-10 max-[1199px]:px-6 mb-10 ">
             <motion.div
-                className="p-10 max-[809px]:px-6 bg-[#1a1f71] text-white w-full"
+                className="p-10 max-[809px]:px-6 bg-setting-dim text-accent-bright w-full"
                 initial={{
                     opacity: 0
                 }}
@@ -34,9 +35,11 @@ function GetQuoteComp() {
                     </div>
 
                     <div className="w-full h-20 flex justify-end">
-                        <button className="max-[809px]:w-full w-auto font-mono text-[27px] font-extrabold leading-[1.2em] text-[#1a1f71] bg-[#e2e3f8] h-full p-[27.15px] items-center cursor-pointer flex flex-row flex-nowrap justify-center overflow-hidden relative ">
-                            ✦ Get Quote
-                        </button>
+                        <AnimateTilt hoverSetting="#c1c3f1" bgSetting="var(--setting-bright)" classNames="max-[809px]:w-full w-auto p-[27.15px] items-center bg-setting-bright text-accent-dim flex flex-row flex-nowrap justify-center overflow-hidden relative cursor-pointer h-full">
+                            <button className=" font-mono text-[27px] font-extrabold leading-[1.2em] cursor-pointer ">
+                                ✦ Get Quote
+                            </button>
+                        </AnimateTilt>
                     </div>
                 </div>
             </motion.div>

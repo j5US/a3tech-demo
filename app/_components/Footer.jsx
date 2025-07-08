@@ -1,4 +1,8 @@
+import Link from "next/link";
 import { Marquee } from "./Marquee";
+// import DnbSeal from "./DnBSeal";
+// import DnbSealIframe from "./DnbSealFrame";
+// import DnbQR from "./DnbQR";
 
 function Footer() {
     return (
@@ -14,16 +18,28 @@ function Footer() {
                     </p>
                 </div>
 
+                <div className="">
+                    {/* <DnbSeal/> */}
+                    {/* <DnbSealIframe/> */}
+                    {/* <DnbQR/> */}
+                </div>
+
                 <div className="flex items-start flex-none flex-col flex-nowrap gap-2.5 h-min justify-center overflow-hidden relative">
 
                     <div className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap ">
-                        <p className="font-mono font-medium leading-[1.2em] text-[16px]">Our Story </p>
+                        <Link href="/our-story">
+                            <p className="font-mono font-medium leading-[1.2em] text-[16px]">Our Story </p>
+                        </Link>
                     </div>
                     <div className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap ">
-                        <p className="font-mono font-medium leading-[1.2em] text-[16px]">Business Divisions </p>
+                        <Link href="#">
+                            <p className="font-mono font-medium leading-[1.2em] text-[16px]">Business Divisions </p>
+                        </Link>
                     </div>
                     <div className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap ">
-                        <p className="font-mono font-medium leading-[1.2em] text-[16px]">Contact </p>
+                        <Link href="#">
+                            <p className="font-mono font-medium leading-[1.2em] text-[16px]">Contact </p>
+                        </Link>
                     </div>
 
                 </div>
@@ -38,7 +54,7 @@ function Footer() {
                 <li className="list-item list-none">
                     <div className="shrink-0 h-[138px] overflow-hidden relative w-[975px] ">
                         <div className="outline-none flex flex-col justify-start h-auto whitespace-pre w-auto">
-                            <p className="font-anton text-[115px] text-[#1a1f71] font-normal tracking-normal leading-[1.2em] text-start ">
+                            <p className="font-anton text-[115px] text-accent-dim font-normal tracking-normal leading-[1.2em] text-start ">
                                 AAATech Corporation
                             </p>
                         </div>
@@ -46,7 +62,7 @@ function Footer() {
                 </li>
                 <li className="list-item list-none">
                     <div className="items-center flex flex-row flex-nowrap gap-2.5 h-[138px] justify-center overflow-hidden relative w-min">
-                        <div className="outline-none flex flex-col justify-start shrink-0 text-[#1a1f71] flex-none h-auto relative whitespace-pre w-auto">
+                        <div className="outline-none flex flex-col justify-start shrink-0 text-accent-dim flex-none h-auto relative whitespace-pre w-auto">
                             <p className=" font-mono text-[115px] font-extrabold tracking-normal leading-[1.2em] ">
                                 •
                             </p>
@@ -55,7 +71,7 @@ function Footer() {
                 </li>
                 <li className="list-item list-none">
                     <div className="items-center flex flex-row flex-nowrap gap-2.5 h-[138px] justify-center overflow-hidden relative w-min">
-                        <div className="outline-none flex flex-col justify-start shrink-0 text-[#1a1f71] flex-none h-auto relative whitespace-pre w-auto">
+                        <div className="outline-none flex flex-col justify-start shrink-0 text-accent-dim flex-none h-auto relative whitespace-pre w-auto">
                             <p className="font-anton text-[115px] font-normal tracking-normal leading-[1.2em] ">
                                 Est 2020
                             </p>
@@ -64,7 +80,7 @@ function Footer() {
                 </li>
                 <li className="list-item list-none">
                     <div className="items-center flex flex-row flex-nowrap gap-2.5 h-[138px] justify-center overflow-hidden relative w-min">
-                        <div className="outline-none flex flex-col justify-start shrink-0 text-[#1a1f71] flex-none h-auto relative whitespace-pre w-auto">
+                        <div className="outline-none flex flex-col justify-start shrink-0 text-accent-dim flex-none h-auto relative whitespace-pre w-auto">
                             <p className="font-mono text-[115px] font-extrabold tracking-normal leading-[1.2em] ">
                                 •
                             </p>
@@ -73,7 +89,7 @@ function Footer() {
                 </li>
                 <li className="list-item list-none">
                     <div className="items-center flex flex-row flex-nowrap gap-2.5 h-[138px] justify-center overflow-hidden relative w-min">
-                        <div className="outline-none flex flex-col justify-start shrink-0 text-[#1a1f71] flex-none h-auto relative whitespace-pre w-auto">
+                        <div className="outline-none flex flex-col justify-start shrink-0 text-accent-dim flex-none h-auto relative whitespace-pre w-auto">
                             <p className="font-anton text-[115px] font-normal tracking-normal leading-[1.2em] ">
                                 AAATech Corporation
                             </p>
@@ -82,7 +98,7 @@ function Footer() {
                 </li>
                 <li className="list-item list-none">
                     <div className="items-center flex flex-row flex-nowrap gap-2.5 h-[138px] justify-center overflow-hidden relative w-min">
-                        <div className="outline-none flex flex-col justify-start shrink-0 text-[#1a1f71] flex-none h-auto relative whitespace-pre w-auto">
+                        <div className="outline-none flex flex-col justify-start shrink-0 text-accent-dim flex-none h-auto relative whitespace-pre w-auto">
                             <p className="font-mono text-[115px] font-extrabold tracking-normal leading-[1.2em] ">
                                 •
                             </p>
@@ -91,7 +107,7 @@ function Footer() {
                 </li>
                 <li className="list-item list-none">
                     <div className="items-center flex flex-row flex-nowrap gap-2.5 h-[138px] justify-center overflow-hidden relative w-min">
-                        <div className="outline-none flex flex-col justify-start shrink-0 text-[#1a1f71] flex-none h-auto relative whitespace-pre w-auto">
+                        <div className="outline-none flex flex-col justify-start shrink-0 text-accent-dim flex-none h-auto relative whitespace-pre w-auto">
                             <p className="font-anton text-[115px] font-normal tracking-normal leading-[1.2em] ">
                                 Est 2020
                             </p>
@@ -100,7 +116,7 @@ function Footer() {
                 </li>
                 <li className="list-item list-none">
                     <div className="items-center flex flex-row flex-nowrap gap-2.5 h-[138px] justify-center overflow-hidden relative w-min">
-                        <div className="outline-none flex flex-col justify-start shrink-0 text-[#1a1f71] flex-none h-auto relative whitespace-pre w-auto">
+                        <div className="outline-none flex flex-col justify-start shrink-0 text-accent-dim flex-none h-auto relative whitespace-pre w-auto">
                             <p className="font-mono text-[115px] font-extrabold tracking-normal leading-[1.2em] ">
                                 •
                             </p>

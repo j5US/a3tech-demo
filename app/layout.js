@@ -4,6 +4,7 @@ import { Inconsolata } from 'next/font/google';
 import { Anton } from 'next/font/google';
 import NavBar from "@/app/_components/NavBar";
 import Footer from "./_components/Footer";
+import { DarkModeProvider } from "./_context/DarkModeContext";
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -35,14 +36,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="light-mode">
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${anton.variable} ${inconsolata.variable} antialiased`}
       >
-        <NavBar />
-        {children}
-        <Footer/>
+        <DarkModeProvider>
+
+          <NavBar />
+          {children}
+          <Footer />
+        </DarkModeProvider>
       </body>
     </html>
   );

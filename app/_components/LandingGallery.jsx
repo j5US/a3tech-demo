@@ -57,7 +57,6 @@ function LandingGallery() {
                     className="object-cover"
                     src="/automobile.avif"
                     alt="Automobile Image"
-                    objectFit="cover"
                 />
             </div>
         </motion.div>

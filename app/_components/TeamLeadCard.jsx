@@ -1,7 +1,8 @@
 import Image from "next/image";
+
 function TeamLeadCard({variant="primary", img, imgAlt, name, position, precis}) {
-    const backgroundColor = variant === "secondary" ? "bg-[#e2e3f8]" : "bg-[#1a1f71]";
-    const textColor = variant === "secondary" ? "text-[#1a1f71]" : "text-[#e2e3f8]";
+    const backgroundColor = variant === "secondary" ? "bg-setting-bright" : "bg-setting-dim";
+    const textColor = variant === "secondary" ? "text-accent-dim" : "text-accent-bright";
 
     return (
         <div className="[flex:1_0_0px] h-full relative w-[1px] max-[1199px]:w-full max-[1199px]:items-center max-[1199px]:flex max-[1199px]:flex-none max-[1199px]:flex-row max-[1199px]:gap-2.5 max-[1199px]:h-min">
