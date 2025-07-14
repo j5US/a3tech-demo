@@ -5,6 +5,7 @@ import { Anton } from 'next/font/google';
 import NavBar from "@/app/_components/NavBar";
 import Footer from "./_components/Footer";
 import { DarkModeProvider } from "./_context/DarkModeContext";
+import CollapsibleMenu from "./_components/CollapsibleMenu";
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
         <DarkModeProvider>
 
           <NavBar />
+          {/* <CollapsibleMenu/> */}
           {children}
           <Footer />
         </DarkModeProvider>

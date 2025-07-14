@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen pt-[155px] mb-0">
       {/* <div className="w-full px-[40px] flex items-end flex-row flex-nowrap gap-4 h-[192px] mt-[204px] justify-center overflow-visible"> */}
-      <LandingBanner/>
+      <LandingBanner />
 
       <div className="hidden my-6 mt-7 max-[809px]:flex w-full h-[44px] relative flex-none px-6">
         <AnimateTilt component="button" bgSetting="var(--setting-dim)" hoverSetting="var(--accent-nav)" classNames="bg-setting-dim size-full w-full items-center cursor-pointer flex flex-row flex-nowrap gap-2.5 h-[44px] justify-center overflow-hidden p-4 relative">
@@ -36,8 +36,8 @@ export default function Home() {
             {
               title: "Textile Manufacturing",
               precis: "Advanced yarn and fabric production with cutting-edge technology",
-              image: "/yarn.avif",
-              imageAlt: "Yarn image describing textile industry",
+              image: "/fabric.jpg",
+              imageAlt: "Piece of silky smooth fabric",
               contents: <>
                 <li> • 45+ Air Jet Looms (China-imported) </li>
                 <li> • 20,000 meters/day capacity</li>
@@ -48,8 +48,8 @@ export default function Home() {
             {
               title: "Milk Products",
               precis: "Full-scale dairy processing facility at Karjan, Vadodara",
-              image: "/dairy-bottles.avif",
-              imageAlt: "Shelves full of dairy products",
+              image: "/dairy_platter.jpg",
+              imageAlt: "Platter full of dairy products",
               variant: "secondary",
               contents: <>
                 <li> • Milk, curd, ghee, paneer production </li>
@@ -69,9 +69,34 @@ export default function Home() {
                 <li> • Expanding to 50 excavators by March 2026 </li>
                 <li> • International operations planned </li>
               </>,
-            }
+            },
+            {
+              title: "Laundry Services",
+              precis: "Equipped with 5+ professional pressing machines for efficient service.",
+              image: "/washing_machine.jpg",
+              imageAlt: "Laundry machinery - washing machines",
+              variant: "secondary",
+              contents: <>
+                <li> • All fabric pressing </li>
+                <li> • Quick service </li>
+                <li> • Careful handling</li>
+                <li> • For homes & businesses</li>
+              </>,
+            },
+            {
+              title: "Real Estate",
+              precis: "We offer reliable real estate solutions to meet your property needs.",
+              image: "/building.jpg",
+              imageAlt: "Picture of tall buildings",
+              contents: <>
+                <li> • Property buying & selling </li>
+                <li> • Rental & lease services </li>
+                <li> • Verified property listings </li>
+                <li> • Expert market guidance </li>
+              </>,
+            },
           ].map((card, index) => {
-            return <StickyCard key={index} index={index} {...card}/>
+            return <StickyCard key={index} index={index} {...card} />
           })
         }
       </div>

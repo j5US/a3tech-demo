@@ -45,8 +45,6 @@ function Footer() {
                 </div>
             </div>
 
-            {/* <InfinityBanner /> */}
-
             {/* <Marquee>
                 <div>Hello</div>
             </Marquee> */}
