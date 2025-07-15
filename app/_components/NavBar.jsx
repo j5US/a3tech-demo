@@ -72,17 +72,17 @@ function NavBar() {
                                     Dairy Products
                                 </div>
                             </Link>
-                            <Link href="#">
+                            <Link href="/mining">
                                 <div onClick={() => setIsOpen(false)} className='text-[16px] w-full leading-[1.2em] tracking-normal font-mono p-6 border-b border-sticky-card-bound'>
                                     Mining Equipments
                                 </div>
                             </Link>
-                            <Link href="#">
+                            <Link href="/laundry">
                                 <div onClick={() => setIsOpen(false)} className='text-[16px] w-full leading-[1.2em] tracking-normal font-mono p-6 border-b border-sticky-card-bound'>
                                     Laundry Services
                                 </div>
                             </Link>
-                            <Link href="#">
+                            <Link href="/real-estate">
                                 <div onClick={() => setIsOpen(false)} className='text-[16px] w-full leading-[1.2em] tracking-normal font-mono p-6 border-b border-sticky-card-bound'>
                                    Real Estate 
                                 </div>

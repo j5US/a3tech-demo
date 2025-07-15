@@ -9,7 +9,7 @@ function TeamLeadCard({variant="primary", img, imgAlt, name, position, precis}) 
             <div className={`${backgroundColor} items-start flex flex-none flex-col flex-nowrap gap-3 h-full justify-start overflow-hidden p-[24px] w-full max-[1199px]:h-min`}>
                 <div className="rounded-full overflow-hidden flex-none size-[66px] relative">
                     <Image
-                        className="object-cover rounded-full"
+                        className="object-cover rounded-full object-top"
                         src={img}
                         alt={imgAlt}
                         fill

@@ -173,7 +173,7 @@ export default function Page() {
                         name="Mr. Kalpesh J. Vaghasiya"
                         position="Managing Director"
                         precis="Leads overall strategic direction and operational leadership of AAA Tech Corporation. With deep understanding of corporate governance and business dynamics, he plays a pivotal role in decision-making, resource allocation, and growth planning."
-                        img="/team-lead-1.jpeg"
+                        img="/mr_kalpesh.avif"
                         imgAlt="Managing Director - Mr. Kalpesh J. Vaghasiya"
                     />
                     <TeamLeadCard
@@ -181,14 +181,14 @@ export default function Page() {
                         name="Mr. Rahul D. Vaghasiya"
                         position="Director"
                         precis="Co-founder and Director instrumental in overseeing key functions and supporting development of new business ventures. His leadership strengthens the corporation's foundation and ensures alignment with long-term goals."
-                        img="/team-lead-1.jpeg"
+                        img="/mr_rahul.avif"
                         imgAlt="Director - Mr. Rahul D. Vaghasiya"
                     />
                     <TeamLeadCard
                         name="Mr. Ronak Godara"
                         position="Head of Business Development"
                         precis="Leads Business Development division, responsible for identifying new opportunities, partnerships, and market expansion strategies. His proactive approach contributes significantly to the corporation's growth and outreach."
-                        img="/team-lead-1.jpeg"
+                        img="/mr_ronak.avif"
                         imgAlt="Head of Business Development - Mr. Ronak Godara"
                     />
                 </div>

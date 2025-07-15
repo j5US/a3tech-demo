@@ -62,7 +62,7 @@ function StoryBanner() {
                     <div className="flex-none h-[480px] max-[1199px]:h-[237px] relative w-full">
                         <Image
                             className="object-cover"
-                            src="/studio.avif"
+                            src="/team_membs.avif"
                             fill
                             alt="AAA Tech Corporation group picture"
                         />
