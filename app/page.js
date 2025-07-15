@@ -43,7 +43,8 @@ export default function Home() {
                 <li> • 20,000 meters/day capacity</li>
                 <li> • 4 computerized embroidery machines</li>
                 <li> • Expanding to 1,000+ looms by 2026 </li>
-              </>
+              </>,
+              linkRef: "/textile",
             },
             {
               title: "Milk Products",
@@ -57,6 +58,7 @@ export default function Home() {
                 <li> • Retail and bulk markets</li>
                 <li> • Modern packaging capabilities</li>
               </>,
+              linkRef: "/dairy",
             },
             {
               title: "Mining Equipments",
@@ -69,6 +71,7 @@ export default function Home() {
                 <li> • Expanding to 50 excavators by March 2026 </li>
                 <li> • International operations planned </li>
               </>,
+              linkRef: "/mining",
             },
             {
               title: "Laundry Services",
@@ -82,6 +85,7 @@ export default function Home() {
                 <li> • Careful handling</li>
                 <li> • For homes & businesses</li>
               </>,
+              linkRef: "/laundry",
             },
             {
               title: "Real Estate",
@@ -94,6 +98,7 @@ export default function Home() {
                 <li> • Verified property listings </li>
                 <li> • Expert market guidance </li>
               </>,
+              linkRef: "/real-estate",
             },
           ].map((card, index) => {
             return <StickyCard key={index} index={index} {...card} />

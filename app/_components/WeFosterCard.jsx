@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { VscArrowSmallRight } from "react-icons/vsc";
 
 function WeFosterCard() {
@@ -37,9 +38,12 @@ function WeFosterCard() {
                 </p>
             </div>
             <div className="outline-none flex justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full">
-                <p className="flex gap-1.5 justify-end items-center font-mono  text-right leading-[1.2em] w-full">
-                    <span className="text-[24px] font-bold">Read More</span>
-                    <VscArrowSmallRight className="text-[26px] mt-0.5 mr-1" />
+
+                <p className="flex gap-1.5 justify-end items-center font-mono text-right leading-[1.2em] w-full">
+                    <Link href="/our-story" className="flex gap-1.5 items-center">
+                        <span className="text-[24px] font-bold">Read More</span>
+                        <VscArrowSmallRight className="text-[26px] mt-0.5 mr-1" />
+                    </Link>
                 </p>
             </div>
         </motion.div>

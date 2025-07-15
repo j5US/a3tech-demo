@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 function StickyCard({
     index,
     title,
@@ -7,6 +8,7 @@ function StickyCard({
     image,
     imageAlt,
     variant = "primary",
+    linkRef = "#"
 }) {
     const backgroundColor = (variant === "secondary") ? "bg-setting-dim" : "bg-setting-bright";
     const fontColor = (variant === "secondary") ? "text-accent-bright" : "text-accent-dim";
@@ -27,9 +29,11 @@ function StickyCard({
                         {/* {children} */}
                         {contents}
                     </ul>
-                    <p className="text-2xl font-mono font-black leading-[1.2em] ">
-                        Know More ✦
-                    </p>
+                    <Link href={linkRef}>
+                        <p className="text-2xl font-mono font-black leading-[1.2em] ">
+                            Know More ✦
+                        </p>
+                    </Link>
                 </div>
             </div>
             <div className="max-[1199px]:w-full w-1/2 h-full relative max-[1199px]:h-[60%] max-[809px]:h-full">

@@ -8,7 +8,7 @@ function DivisionBanner({
     svgViewBox,
     bannerSize,
     bannerSrc,
-    bannerAlt
+    bannerAlt,
 }) {
     return (
         <div className="items-end flex flex-none flex-col gap-2.5 h-min overflow-hidden px-10 pb-10 max-[1199px]:px-6">
@@ -60,6 +60,7 @@ function DivisionBanner({
                         {precis}
                     </p>
                 </motion.div>
+
                 <div className="flex-none h-[480px] relative w-full">
                     <Image
                         fill
@@ -68,6 +69,7 @@ function DivisionBanner({
                         alt={bannerAlt}
                     />
                 </div>
+
             </div>
         </div >
     );
