@@ -30,7 +30,7 @@ function DivDropdown() {
                         className="text-accent-dim bg-setting-nav w-full items-start flex flex-col gap-[5px] h-min p-[15px] relative">
                         <div className="items-center flex flex-none gap-[15px] flex-row h-min overflow-hidden relative w-full">
                             <div className="outline-none flex flex-col justify-start shrink-0 [flex:1_0_0px] h-auto relative select-none whitespace-pre-wrap w-[1px]">
-                                <Link href="textile">
+                                <Link href="/textile">
                                     <p className=" font-mono font-medium tracking-[-0.01em] leading-[1.5em] text-left whitespace-pre-wrap select-none ">
                                         Textile
                                     </p>
@@ -41,7 +41,7 @@ function DivDropdown() {
                         </div>
                         <div className="items-center flex flex-none gap-[15px] flex-row h-min overflow-hidden relative w-full">
                             <div className="outline-none flex flex-col justify-start shrink-0 [flex:1_0_0px] h-auto relative select-none whitespace-pre-wrap w-[1px]">
-                                <Link href="dairy">
+                                <Link href="/dairy">
                                     <p className="font-mono font-medium tracking-[-0.01em] leading-[1.5em] text-left whitespace-pre-wrap select-none ">
                                         Dairy
                                     </p>
@@ -52,7 +52,7 @@ function DivDropdown() {
                         </div>
                         <div className="items-center flex flex-none gap-[15px] flex-row h-min overflow-hidden relative w-full">
                             <div className="outline-none flex flex-col justify-start shrink-0 [flex:1_0_0px] h-auto relative select-none whitespace-pre-wrap w-[1px]">
-                                <Link href="mining">
+                                <Link href="/mining">
                                     <p className="font-mono font-medium tracking-[-0.01em] leading-[1.5em] text-left whitespace-pre-wrap select-none ">
                                         Mining
                                     </p>
@@ -63,7 +63,7 @@ function DivDropdown() {
                         </div>
                         <div className="items-center flex flex-none gap-[15px] flex-row h-min overflow-hidden relative w-full">
                             <div className="outline-none flex flex-col justify-start shrink-0 [flex:1_0_0px] h-auto relative select-none whitespace-pre-wrap w-[1px]">
-                                <Link href="mining">
+                                <Link href="/laundry">
                                     <p className="font-mono font-medium tracking-[-0.01em] leading-[1.5em] text-left whitespace-pre-wrap select-none ">
                                         Laundry
                                     </p>
@@ -74,7 +74,7 @@ function DivDropdown() {
                         </div>
                         <div className="items-center flex flex-none gap-[15px] flex-row h-min overflow-hidden relative w-full">
                             <div className="outline-none flex flex-col justify-start shrink-0 [flex:1_0_0px] h-auto relative select-none whitespace-pre-wrap w-[1px]">
-                                <Link href="mining">
+                                <Link href="/real-estate">
                                     <p className="font-mono font-medium tracking-[-0.01em] leading-[1.5em] text-left whitespace-pre-wrap select-none ">
                                         Real Estate
                                     </p>

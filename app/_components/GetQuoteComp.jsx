@@ -30,7 +30,7 @@ function GetQuoteComp() {
                             Ready to partner with us ?
                         </p>
                         <p className="font-mono text-[16px] leading-[1.2em]">
-                            Join us in building the future across textile, dairy, and mining equipment industries.
+                            Join us in building the future across multiple industries.
                         </p>
                     </div>
 

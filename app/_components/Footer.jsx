@@ -12,9 +12,7 @@ function Footer() {
                 <div className="outline-none w-[367px] max-[809px]:w-full flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap">
 
                     <p className="leading-[1.2em] font-mono font-medium text-[16px] whitespace-pre-wrap ">
-                        Leading umbrella corporation empowering innovation across textile manufacturing, dairy
-                        products, and mining equipment sectors with strategic leadership and operational
-                        excellence.
+                        Leading umbrella corporation empowering innovation across textile manufacturing, dairy products, mining equipment, laundry, and real estate sectors with strategic leadership and operational excellence.
                     </p>
                 </div>
 
