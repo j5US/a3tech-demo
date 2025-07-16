@@ -3,6 +3,8 @@ import DivisionBanner from "../_components/DivisionBanner";
 import DivisionBannerCard from "../_components/DivisionBannerCard";
 import DivisionSection from "../_components/DivisionSection";
 import GetQuoteComp from "../_components/GetQuoteComp";
+import bannerImg from "@/public/banner_laundry.avif";
+import secBannerImg from "@/public/clothes_stack.avif";
 
 export const metadata = {
     title: "AAA Tech Corp • Laundry",
@@ -16,7 +18,7 @@ export default function Page() {
                 bannerTitle="Laundry Services"
                 bannerSize="162.92px"
                 svgViewBox="0 0 1120 196"
-                bannerSrc="/banner_laundry.avif"
+                bannerSrc={bannerImg}
                 bannerAlt="Banner for laundry page - ironing a piece of fabric"
                 precis="Distributor of Franchise - Laundry Legend"
             />
@@ -33,7 +35,7 @@ export default function Page() {
                     />
                 </div>
                 <DivisionBannerCard
-                    imgSrc="/clothes_stack.avif"
+                    imgSrc={secBannerImg}
                     imgAlt="Clothes stacked on top of each other in a laundry"
                     summary={[
                         {

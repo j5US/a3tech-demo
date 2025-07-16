@@ -61,6 +61,8 @@ function DivisionBannerCard({ summary, highlights, imgSrc, imgAlt }) {
                     className="object-cover"
                     src={imgSrc}
                     alt={imgAlt}
+                    quality={80}
+                    sizes="(max-width: 809px) 100vw, (max-width: 1199px) 100vw, 50vw"
                 />
             </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import bannerImg from "@/public/team_membs.avif";
 
 function StoryBanner() {
 
@@ -55,14 +56,16 @@ function StoryBanner() {
                     }}
                 >
                     <p className="font-mono font-medium text-right text-[16px] leading-[1.2em]">
-                        Established in 2024, AAA Tech Corporation Pvt. Ltd. serves as an umbrella corporation, acting as the parent company to a group of affiliated and subsidiary businesses across diverse sectors.
+                        Established in 2025, AAA Tech Corporation Pvt. Ltd. serves as an umbrella corporation, acting as the parent company to a group of affiliated and subsidiary businesses across diverse sectors.
                     </p>
                 </motion.div>
                 <div className="contents ">
                     <div className="flex-none h-[480px] max-[1199px]:h-[237px] relative w-full">
                         <Image
                             className="object-cover"
-                            src="/team_membs.avif"
+                            src={bannerImg}
+                            priority
+                            quality={90}
                             fill
                             alt="AAA Tech Corporation group picture"
                         />

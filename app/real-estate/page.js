@@ -3,6 +3,8 @@ import DivisionBanner from "../_components/DivisionBanner";
 import DivisionBannerCard from "../_components/DivisionBannerCard";
 import DivisionSection from "../_components/DivisionSection";
 import GetQuoteComp from "../_components/GetQuoteComp";
+import bannerImg from "@/public/banner_infra.avif";
+import secBannerImg from "@/public/infra_city.avif";
 
 export const metadata = {
     title: "AAA Tech Corp • Real Estate",
@@ -16,7 +18,7 @@ export default function Page() {
                 bannerTitle="Real Estate"
                 bannerSize="254.8px"
                 svgViewBox="0 0 1120 306"
-                bannerSrc="/banner_infra.avif"
+                bannerSrc={bannerImg}
                 bannerAlt="Banner for real estate page - Asthetically pleasing housing complex"
                 precis="Luxury Flat and Villas"
             />
@@ -33,7 +35,7 @@ export default function Page() {
                     />
                 </div>
                 <DivisionBannerCard
-                    imgSrc="/infra_city.avif"
+                    imgSrc={secBannerImg}
                     imgAlt="City landscape with towering buildings"
                     summary={[
                         {

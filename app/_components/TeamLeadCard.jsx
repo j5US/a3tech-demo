@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function TeamLeadCard({variant="primary", img, imgAlt, name, position, precis}) {
+function TeamLeadCard({ variant = "primary", img, imgAlt, name, position, precis }) {
     const backgroundColor = variant === "secondary" ? "bg-setting-bright" : "bg-setting-dim";
     const textColor = variant === "secondary" ? "text-accent-dim" : "text-accent-bright";
 
@@ -13,6 +13,7 @@ function TeamLeadCard({variant="primary", img, imgAlt, name, position, precis}) 
                         src={img}
                         alt={imgAlt}
                         fill
+                        sizes="66px"
                     />
                 </div>
                 <div className="outline-none flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full">

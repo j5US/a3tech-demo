@@ -4,6 +4,11 @@ import LandingGallery from "./_components/LandingGallery";
 import WeFosterCard from "./_components/WeFosterCard";
 import LandingBanner from "./_components/LandingBanner";
 import AnimateTilt from "./_components/AnimateTilt";
+import stickyPoster1 from "@/public/fabric.jpg";
+import stickyPoster2 from "@/public/dairy_platter.jpg";
+import stickyPoster3 from "@/public/terrain.avif";
+import stickyPoster4 from "@/public/washing_machine.jpg";
+import stickyPoster5 from "@/public/building.jpg";
 
 export default function Home() {
   return (
@@ -36,7 +41,8 @@ export default function Home() {
             {
               title: "Textile Manufacturing",
               precis: "Advanced yarn and fabric production with cutting-edge technology",
-              image: "/fabric.jpg",
+              // image: "/fabric.jpg",
+              image: stickyPoster1,
               imageAlt: "Piece of silky smooth fabric",
               contents: <>
                 <li> • 45+ Air Jet Looms (China-imported) </li>
@@ -49,7 +55,8 @@ export default function Home() {
             {
               title: "Milk Products",
               precis: "Full-scale dairy processing facility at Karjan, Vadodara",
-              image: "/dairy_platter.jpg",
+              // image: "/dairy_platter.jpg",
+              image: stickyPoster2,
               imageAlt: "Platter full of dairy products",
               variant: "secondary",
               contents: <>
@@ -63,7 +70,8 @@ export default function Home() {
             {
               title: "Mining Equipments",
               precis: "Heavy machinery operation and leasing services",
-              image: "/terrain.avif",
+              // image: "/terrain.avif",
+              image: stickyPoster3,
               imageAlt: "Picture of terrain being excavated",
               contents: <>
                 <li> • 10 excavators currently operational </li>
@@ -76,7 +84,8 @@ export default function Home() {
             {
               title: "Laundry Services",
               precis: "Equipped with 5+ professional pressing machines for efficient service.",
-              image: "/washing_machine.jpg",
+              // image: "/washing_machine.jpg",
+              image: stickyPoster4,
               imageAlt: "Laundry machinery - washing machines",
               variant: "secondary",
               contents: <>
@@ -90,7 +99,8 @@ export default function Home() {
             {
               title: "Real Estate",
               precis: "We offer reliable real estate solutions to meet your property needs.",
-              image: "/building.jpg",
+              // image: "/building.jpg",
+              image: stickyPoster5,
               imageAlt: "Picture of tall buildings",
               contents: <>
                 <li> • Property buying & selling </li>

@@ -1,9 +1,9 @@
-import Image from "next/image";
 import ValueCard from "../_components/ValueCard";
 import TeamLeadCard from "../_components/TeamLeadCard";
 import GetQuoteComp from "../_components/GetQuoteComp";
 import StoryBanner from "../_components/StoryBanner";
 import AnimateFlyInBottom from "../_components/AnimateFlyInBottom";
+
 
 export const metadata = {
     title: "AAA Tech Corp • Our Story",
@@ -17,7 +17,7 @@ export default function Page() {
             <AnimateFlyInBottom classNames="items-center flex flex-none flex-col flex-nowrap gap-2.5 h-min justify-center overflow-hidden p-10 max-[1199px]:px-6 relative w-full">
                 <div className="text-[16px] font-mono font-medium items-center flex flex-none flex-row flex-nowrap h-min justify-between overflow-hidden relative w-full">
                     <p className="leading-[1.2em]">Our Story</p>
-                    <p className="leading-[1.2em]">Est 2024</p>
+                    <p className="leading-[1.2em]">Est 2025</p>
                 </div>
                 <div className="contents">
                     <div className="outline-none flex flex-col justify-start shrink-0 relative flex-none h-auto whitespace-pre-wrap w-full">
@@ -171,10 +171,10 @@ export default function Page() {
                 <div className="items-center flex flex-none flex-nowrap gap-4 h-[357px] justify-center overflow-hidden relative w-full max-[1199px]:h-min max-[1199px]:flex-col">
                     <TeamLeadCard
                         name="Mr. Kalpesh J. Vaghasiya"
-                        position="Managing Director"
+                        position="Director"
                         precis="Leads overall strategic direction and operational leadership of AAA Tech Corporation. With deep understanding of corporate governance and business dynamics, he plays a pivotal role in decision-making, resource allocation, and growth planning."
                         img="/mr_kalpesh.avif"
-                        imgAlt="Managing Director - Mr. Kalpesh J. Vaghasiya"
+                        imgAlt="Director - Mr. Kalpesh J. Vaghasiya"
                     />
                     <TeamLeadCard
                         variant="secondary"
@@ -186,10 +186,10 @@ export default function Page() {
                     />
                     <TeamLeadCard
                         name="Mr. Ronak Godara"
-                        position="Head of Business Development"
+                        position="Managing Director"
                         precis="Leads Business Development division, responsible for identifying new opportunities, partnerships, and market expansion strategies. His proactive approach contributes significantly to the corporation's growth and outreach."
                         img="/mr_ronak.avif"
-                        imgAlt="Head of Business Development - Mr. Ronak Godara"
+                        imgAlt="Managing Director - Mr. Ronak Godara"
                     />
                 </div>
                 <div className="outline-none flex flex-col justify-end shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full ">

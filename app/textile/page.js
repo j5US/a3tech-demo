@@ -4,6 +4,11 @@ import GetQuoteComp from "../_components/GetQuoteComp";
 import DivisionBanner from "../_components/DivisionBanner";
 import DivisionBannerCard from "../_components/DivisionBannerCard";
 import DivisionSection from "../_components/DivisionSection";
+import bannerImg from "@/public/banner_textile.avif";
+import secBannerImg1 from "@/public/yarn_machinery.avif";
+import secBannerImg2 from "@/public/embroidery.jpg";
+import secBannerImg3 from "@/public/cardboard_boxes.jpg";
+
 
 export const metadata = {
     title: "AAA Tech Corp • Textile",
@@ -16,7 +21,7 @@ export default function Page() {
                 bannerTitle="Textile Division"
                 bannerSize="187px"
                 svgViewBox="0 0 1120 224"
-                bannerSrc="/banner_textile.avif"
+                bannerSrc={bannerImg}
                 bannerAlt="Banner for textile page - sheet of white fabric"
                 precis="Explore our cutting-edge textile manufacturing capabilities driving fashion and industrial fabrics worldwide."
             />
@@ -40,7 +45,7 @@ export default function Page() {
                     />
                 </div>
                 <DivisionBannerCard
-                    imgSrc="/yarn_machinery.avif"
+                    imgSrc={secBannerImg1}
                     imgAlt="Yarn Handhled Machinery"
                     summary={[{
                         title: "Types of Yarn Handled",
@@ -88,7 +93,7 @@ export default function Page() {
                     />
                 </div>
                 <DivisionBannerCard
-                    imgSrc="/embroidery.jpg"
+                    imgSrc={secBannerImg2}
                     imgAlt="Colorful embroidery on fabric"
                     summary={[{
                         title: "Machine Specifications",
@@ -137,7 +142,7 @@ export default function Page() {
                 </div>
 
                 <DivisionBannerCard
-                    imgSrc="/cardboard_boxes.jpg"
+                    imgSrc={secBannerImg3}
                     imgAlt="Carboard boxes stacked together"
                     summary={[
                         {

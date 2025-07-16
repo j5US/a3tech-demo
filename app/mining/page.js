@@ -3,6 +3,8 @@ import DivisionBanner from "../_components/DivisionBanner";
 import DivisionBannerCard from "../_components/DivisionBannerCard";
 import DivisionSection from "../_components/DivisionSection";
 import GetQuoteComp from "../_components/GetQuoteComp";
+import bannerImg from "@/public/banner_mining.avif";
+import secBannerImg from "@/public/excavator.avif";
 
 export const metadata = {
     title: "AAA Tech Corp • Mining",
@@ -16,7 +18,7 @@ export default function Page() {
                 bannerTitle="Mining Equipments"
                 bannerSize="146.5px"
                 svgViewBox="0 0 1120 176"
-                bannerSrc="/banner_mining.avif"
+                bannerSrc={bannerImg}
                 bannerAlt="Banner for mining machinery"
                 precis="Heavy machinery operation and leasing services"
             />
@@ -37,7 +39,7 @@ export default function Page() {
                     />
                 </div>
                 <DivisionBannerCard
-                    imgSrc="/excavator.avif"
+                    imgSrc={secBannerImg}
                     imgAlt="Stirdy exacavation machinery"
                     summary={[
                         {

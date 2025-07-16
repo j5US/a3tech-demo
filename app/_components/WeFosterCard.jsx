@@ -29,7 +29,7 @@ function WeFosterCard() {
             }}
         >
             <div className="outline-none flex justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full">
-                <p className="font-mono font-medium text-[16px] leading-[1.2em] w-full">Est 2018</p>
+                <p className="font-mono font-medium text-[16px] leading-[1.2em] w-full">Est 2025</p>
             </div>
             <div className="outline-none flex flex-col shrink-0 justify-start h-auto relative whitespace-pre-wrap w-full">
                 <p className="font-anton text-[56px] max-[1199px]:text-[40px] max-[809px]:text-[32px] font-normal leading-[1.2em] ">

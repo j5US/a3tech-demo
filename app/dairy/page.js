@@ -3,6 +3,8 @@ import DivisionBanner from "../_components/DivisionBanner";
 import DivisionBannerCard from "../_components/DivisionBannerCard";
 import DivisionSection from "../_components/DivisionSection";
 import GetQuoteComp from "../_components/GetQuoteComp";
+import bannerImg from "@/public/banner_dairy.avif"
+import secBannerImg from "@/public/dairy_products.avif"
 
 export const metadata = {
     title: "AAA Tech Corp • Dairy",
@@ -16,7 +18,7 @@ export default function Page() {
                 bannerTitle="Dairy Products"
                 bannerSize="191.7px"
                 svgViewBox="0 0 1120 230"
-                bannerSrc="/banner_dairy.avif"
+                bannerSrc={bannerImg}
                 bannerAlt="Banner for dairy products page - platter of dairy products"
                 precis="Explore our versatile range of dairy products with full-scale dairy processing facility"
             />
@@ -37,7 +39,7 @@ export default function Page() {
                     />
                 </div>
                 <DivisionBannerCard
-                    imgSrc="/dairy_products.avif"
+                    imgSrc={secBannerImg}
                     imgAlt="An image full of high grade dairy items"
                     summary={[
                         {

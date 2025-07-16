@@ -65,6 +65,8 @@ function DivisionBanner({
                     <Image
                         fill
                         className="object-cover"
+                        priority
+                        quality={90}
                         src={bannerSrc}
                         alt={bannerAlt}
                     />
