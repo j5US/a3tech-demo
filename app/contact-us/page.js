@@ -20,9 +20,12 @@ export default function Page() {
                     <div className="self-stretch h-[614px] flex-none overflow-hidden relative w-[50%] max-[1199px]:w-full max-[1199px]:h-[328px]">
                         <Image
                             fill
+                            priority
+                            quality={80}
                             className="object-cover"
                             src="/banner_contact.avif"
                             alt="High quality white cotton fabric"
+                            sizes="(max-width: 1199px) 100vw, 50vw"
                         />
 
                         <div className="max-[1199px]:hidden flex items-center border border-sticky-card-bound bg-setting-bright text-accent-dim rounded-lg flex-row gap-4 absolute right-[30px] left-[33px] bottom-[30px] p-4">

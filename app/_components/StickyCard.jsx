@@ -41,7 +41,7 @@ function StickyCard({
                     src={image}
                     alt={imageAlt}
                     fill
-                    quality={75}
+                    quality={50}
                     className="object-cover"
                     sizes="(max-width: 809px) 100vw, (max-width: 1199px) 100vw, 50vw"
                 />

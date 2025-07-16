@@ -81,7 +81,7 @@ function LandingGallery() {
                                     className="object-cover"
                                     src={srcImg}
                                     alt={altTxt}
-                                    quality={50}
+                                    quality={90}
                                     sizes="(max-width: 809px) 100vw, 20vw"
                                 />
                             </div>
