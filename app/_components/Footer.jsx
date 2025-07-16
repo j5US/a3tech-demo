@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Marquee } from "./Marquee";
-import DnbSeal from "./DnBSeal";
+// import DnbSeal from "./DnbSeal";
+// import DnbSeal from "./DnBSeal";
 // import DnbSealIframe from "./DnbSealFrame";
 // import DnbQR from "./DnbQR";
 
@@ -17,7 +18,7 @@ function Footer() {
                 </div>
 
                 <div className="">
-                    <DnbSeal/>
+                    {/* <DnbSeal/> */}
                     {/* <DnbSealIframe/> */}
                     {/* <DnbQR/> */}
                 </div>
