@@ -66,9 +66,10 @@ function DivisionBanner({
                         fill
                         className="object-cover"
                         priority
-                        quality={90}
+                        quality={50}
                         src={bannerSrc}
                         alt={bannerAlt}
+                        sizes="100vw"
                     />
                 </div>
 

@@ -4,7 +4,7 @@ import GetQuoteComp from "../_components/GetQuoteComp";
 import DivisionBanner from "../_components/DivisionBanner";
 import DivisionBannerCard from "../_components/DivisionBannerCard";
 import DivisionSection from "../_components/DivisionSection";
-import bannerImg from "@/public/banner_textile.avif";
+import bannerImg from "@/public/banner_textile.jpg";
 import secBannerImg1 from "@/public/yarn_machinery.avif";
 import secBannerImg2 from "@/public/embroidery.jpg";
 import secBannerImg3 from "@/public/cardboard_boxes.jpg";
