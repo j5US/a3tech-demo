@@ -9,7 +9,7 @@ export default function DunsSeal() {
     import("postscribe").then((module) => {
       module.default(
         ref.current,
-        `<script src="http://dunsregistered.dnb.com"></script>`
+        `<script src="https://dunsregistered.dnb.com"></script>`
       );
     });
   }, []);
