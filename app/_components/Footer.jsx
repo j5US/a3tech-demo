@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Marquee } from "./Marquee";
 import DnbSeal from "@/app/_components/DnbSeal";
+import DunsSeal from "./DunsSeal";
 
 function Footer() {
     return (
@@ -15,7 +16,8 @@ function Footer() {
                 </div>
 
                 <div className="">
-                    <DnbSeal/>
+                    {/* <DnbSeal/> */}
+                    <DunsSeal/>
                     {/* <DnbSealIframe/> */}
                     {/* <DnbQR/> */}
                 </div>
